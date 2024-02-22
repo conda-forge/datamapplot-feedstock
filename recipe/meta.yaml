@@ -28,6 +28,8 @@ requirements:
     - colorspacious >=1.1
     - scikit-image >=0.22
     - numba >=0.56
+    - requests
+    - jinja2
 
 test:
   imports:
