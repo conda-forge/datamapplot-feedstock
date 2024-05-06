@@ -1,5 +1,5 @@
 {% set name = "datamapplot" %}
-{% set version = "0.2.2" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/datamapplot-{{ version }}.tar.gz
-  sha256: a6fe49ace7f3610dd6e3ea0ef31f4b45ec8019a29cfa5ed967e3d2abe1b689e7
+  sha256: fdceae6085a4aabdc7cd15ce81c34ff54cb77107f78afcaae7989462d7a62ac1
 
 build:
   noarch: python
@@ -28,6 +28,7 @@ requirements:
     - colorspacious >=1.1
     - scikit-image >=0.22
     - numba >=0.56
+    - pylabeladjust
     - requests
     - jinja2
 
