@@ -1,5 +1,5 @@
 {% set name = "datamapplot" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/datamapplot-{{ version }}.tar.gz
-  sha256: fdceae6085a4aabdc7cd15ce81c34ff54cb77107f78afcaae7989462d7a62ac1
+  sha256: 1a9082c30f77dbda5079973050bbe672d93ac10b11ec36c6750b9fff2194df3e
 
 build:
   noarch: python
