@@ -18,18 +18,22 @@ requirements:
   host:
     - python >=3.9
     - pip
+    - setuptools
   run:
     - python >=3.9
     - numpy >=1.21
     - matplotlib-base >=3.8
     - scikit-learn >=1.1
     - pandas >=1.0
+    - pyarrow
     - datashader >=0.16
     - colorspacious >=1.1
     - scikit-image >=0.22
     - numba >=0.56
     - pylabeladjust
     - requests
+    - rcssmin
+    - rjsmin
     - jinja2
 
 test:
