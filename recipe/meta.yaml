@@ -1,13 +1,13 @@
 {% set name = "datamapplot" %}
-{% set version = "0.3.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/datamapplot-{{ version }}.tar.gz
-  sha256: fdceae6085a4aabdc7cd15ce81c34ff54cb77107f78afcaae7989462d7a62ac1
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/datamapplot-{{ version }}.tar.gz
+  sha256: 4302d0d425596624dafe3353b1ecd13d1ce1a6cdeb58d84f4a4e182b3392418a
 
 build:
   noarch: python
@@ -16,10 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python 3.10
     - pip
+    - setuptools
   run:
-    - python >=3.9
+    - python >=3.10
     - numpy >=1.21
     - matplotlib-base >=3.8
     - scikit-learn >=1.1
@@ -31,6 +32,7 @@ requirements:
     - pylabeladjust
     - requests
     - jinja2
+    - importlib_resources 
 
 test:
   imports:
@@ -38,6 +40,7 @@ test:
   commands:
     - pip check
   requires:
+    - python 3.10
     - pip
 
 about:
